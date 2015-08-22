@@ -1,9 +1,27 @@
-<h3>Contact Create Form</h3>
-
 <form class="contact-form" {{action 'save'  model on='submit'}}>
+    <h4>Contact Create Form</h4>
+
     {{md-input value=model.firstName label='First Name'}}
 
     {{md-input value=model.lastName label='Last Name'}}
+
+    {{md-input value=model.officeNumber label='Office Number'}}
+
+    {{md-input value=model.cellNumber label='Cell Number'}}
+
+    {{md-input value=model.email label='email'}}
+
+    {{md-input value=model.addressOne label='Address 1'}}
+
+    {{md-input value=model.addressTwo label='Address 2'}}
+
+    {{md-input value=model.city label='city'}}
+
+    {{md-input value=model.state label='State'}}
+
+    {{md-input value=model.zip label='Zip'}}
+
+    {{md-input value=model.publicOrg label='Public Org'}}
 
     <button class="save-item"><i class="fa fa-floppy-o"></i></button>
 </form>
