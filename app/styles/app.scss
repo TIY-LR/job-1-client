@@ -1,2 +1,23 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
+
+@import 'nav-bar';
+@import 'contact';
+
+.s10 {
+    background-color: red;
+}
+
+.s2 {
+    border-top: 1px dotted black;
+    text-align: center;
+    background-color: #92C9D8;
+}
+
+.fa-users {
+    font-size: 100pt;
+    padding: 10px;
+    background-color: white;
+    border: 10pt solid black;
+    margin-top: 10px;
+}

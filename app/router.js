@@ -6,6 +6,12 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('tracker', {path: '/'}, function() {
+    this.route('contacts', function() {
+      this.route('create');
+      this.route('show');
+    });
+  });
 });
 
 export default Router;
