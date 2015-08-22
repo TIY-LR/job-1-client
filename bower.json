@@ -14,6 +14,10 @@
     "qunit": "~1.18.0",
     "jquery-file-upload": "~9.11.0",
     "materialize": "~0.97.0",
-    "font-awesome": "~4.4.0"
+    "font-awesome": "~4.4.0",
+    "dinosheets": "0.0.1"
+  },
+  "resolutions": {
+    "loader.js": "3.2.1"
   }
 }

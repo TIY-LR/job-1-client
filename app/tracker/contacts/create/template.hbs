@@ -1,0 +1,10 @@
+<h3>Contact Create Form</h3>
+
+<form class="contact-form" {{action 'save'  model on='submit'}}>
+    {{md-input value=model.firstName label='First Name'}}
+
+    {{md-input value=model.lastName label='Last Name'}}
+
+    <button class="save-item"><i class="fa fa-floppy-o"></i></button>
+</form>
+{{outlet}}
