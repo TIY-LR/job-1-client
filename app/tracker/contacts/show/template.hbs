@@ -1,7 +1,24 @@
-<div class="col s9">
+<div class="col s10">
     {{#link-to "tracker.contacts.create"}}
         <i class="fa fa-plus"></i>
     {{/link-to}}
+</div>
+<div class="contact-view">
+    <img class="contact-pic" src="/contact-pic.jpg" alt="contact">
+    <ul>
+        {{#each model as |contact|}}
+            <li>{{contact.firstName}} {{contact.lastName}}</li>
+            <li>{{contact.officeNumber}}</li>
+            <li>{{contact.cellNumber}}</li>
+            <li>{{contact.email}}</li>
+            <li>{{contact.addressOne}}</li>
+            <li>{{contact.addressTwo}}</li>
+            <li>{{contact.city}}</li>
+            <li>{{contact.state}}</li>
+            <li>{{contact.zip}}</li>
+            <li>{{contact.publicOrg}}</li>
+        {{/each}}
+    </ul>
 </div>
 
 {{outlet}}

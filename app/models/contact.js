@@ -11,5 +11,5 @@ export default DS.Model.extend({
   city: DS.attr('string'),
   state: DS.attr('string'),
   zip: DS.attr('string'),
-  piblicOrg: DS.attr('string'),
+  publicOrg: DS.attr('string'),
 });
