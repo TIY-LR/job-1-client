@@ -10,9 +10,8 @@ export default Ember.Route.extend({
     save: function(contact) {
 
       contact.save().then(() => {
-        this.transitionTo('tracker');
+        this.transitionTo('tracker.contacts');
       });
-      console.log(contact.firstName);
     }
   }
 });

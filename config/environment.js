@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'job-tracker',
     environment: environment,
+    contentSecurityPolicy: {'connect-src': "'self' http://jobtracker.azurewebsites.net"},
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
