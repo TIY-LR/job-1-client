@@ -2,13 +2,13 @@
 
     <div class="col s2">
         {{#link-to 'tracker.profile.create'}}
-            {{md-btn icon='perm_identity' action='debug' buttonType='floating' class='btn-large'}}
+            {{md-btn icon='fa fa-user' action='debug' buttonType='floating' class='btn-large'}}
         {{/link-to}}
         {{#link-to 'tracker.contacts.show'}}
-            {{md-btn icon='mdi-action-favorite' action='debug' buttonType='floating' class='btn-large'}}
+            {{md-btn icon='fa fa-phone' action='debug' buttonType='floating' class='btn-large'}}
         {{/link-to}}
-        {{#link-to 'tracker.contacts.show'}}
-            {{md-btn icon='mdi-action-favorite' action='debug' buttonType='floating' class='btn-large'}}
+        {{#link-to 'tracker.documents.show'}}
+            {{md-btn icon='fa fa-file-text-o' action='debug' buttonType='floating' class='btn-large'}}
         {{/link-to}}
     </div>
     {{outlet}}

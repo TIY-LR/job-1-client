@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.job-status > li:nth-child(odd) {
+    background-color: #42555F;
+}
+
+.job-status > li:nth-child(even) {
+    background-color: #5D6C7D;
+}
