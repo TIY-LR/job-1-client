@@ -3,6 +3,7 @@
 
 @import 'nav-bar';
 @import 'contact';
+@import 'footer';
 
 .s10 {
     position: relative;
@@ -20,14 +21,3 @@
     border: 1px solid white;
 }
 
-.fa-plus {
-    position: absolute;
-    top: .5em;
-    right: .5em;
-    font-size: 25pt;
-    color: white;
-    border: 1px solid #92C9D8;
-    border-radius: 50%;
-    background-color: #92C9D8;
-    padding: 5px;
-}
