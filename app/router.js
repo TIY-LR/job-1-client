@@ -11,6 +11,17 @@ Router.map(function() {
       this.route('create');
       this.route('show');
     });
+    this.route('events', function() {
+      this.route('create');
+      this.route('edit');
+      this.route('show');
+    });
+    this.route('documents', function() {
+      this.route('show');
+    });
+    this.route('profile', function() {
+      this.route('create');
+    });
   });
 });
 

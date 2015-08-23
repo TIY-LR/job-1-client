@@ -5,19 +5,29 @@
 @import 'contact';
 
 .s10 {
-    background-color: red;
+    position: relative;
 }
 
 .s2 {
-    border-top: 1px dotted black;
-    text-align: center;
+    border-top: 1px dotted white;
     background-color: #92C9D8;
+    text-align: center;
 }
 
-.fa-users {
-    font-size: 100pt;
-    padding: 10px;
-    background-color: white;
-    border: 10pt solid black;
-    margin-top: 10px;
+.btn-large {
+    margin: .5em;
+    background-color: #92C9D8;
+    border: 1px solid white;
+}
+
+.fa-plus {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    font-size: 25pt;
+    color: white;
+    border: 1px solid #92C9D8;
+    border-radius: 50%;
+    background-color: #92C9D8;
+    padding: 5px;
 }

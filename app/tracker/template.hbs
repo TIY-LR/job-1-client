@@ -1,10 +1,16 @@
 <div class="row">
 
     <div class="col s2">
-        {{#link-to "tracker.contacts.show"}}
-            <i class="fa fa-users"></i>
+        {{#link-to 'tracker.profile.create'}}
+            {{md-btn icon='perm_identity' action='debug' buttonType='floating' class='btn-large'}}
+        {{/link-to}}
+        {{#link-to 'tracker.contacts.show'}}
+            {{md-btn icon='mdi-action-favorite' action='debug' buttonType='floating' class='btn-large'}}
+        {{/link-to}}
+        {{#link-to 'tracker.contacts.show'}}
+            {{md-btn icon='mdi-action-favorite' action='debug' buttonType='floating' class='btn-large'}}
         {{/link-to}}
     </div>
-
     {{outlet}}
 </div>
+

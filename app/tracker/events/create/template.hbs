@@ -1,0 +1,17 @@
+<div class="col s10">
+    <form class="contact-form" {{action 'save'  model on='submit'}}>
+        <h4>Event Create Form</h4>
+
+        {{md-input value=model.eventName label='Event Name'}}
+
+        {{md-input value=model.eventDate label='Date'}}
+
+        {{md-input value=model.eventLocation label='location'}}
+
+        {{md-input value=model.evebntLink label='link'}}
+
+        {{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Submit'}}
+    </form>
+</div>
+
+{{outlet}}
