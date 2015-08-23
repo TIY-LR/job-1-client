@@ -1,0 +1,81 @@
+<header>
+{{#md-navbar name='Iron Clad Jobs' class='indigo' homeRoute='tracker'}}
+{{/md-navbar}}
+</header>
+
+<main>
+    {{outlet}}
+
+    {{md-modal-container}}
+</main>
+
+<footer class="page-footer">
+  <div class="footer-container container">
+    <div class="row">
+      <div class="col l4 s12">
+        <h5 class="white-text">Potential Jobs</h5>
+          <ul class="job-status">
+            <li><a class="grey-text text-lighten-3" href="#!">{{model.name}}</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Potential Job</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Potential Job</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Potential Job</a></li>
+          </ul>
+      </div>
+      <div class="col l4 s12">
+        <h5 class="white-text">Contact</h5>
+        <ul class="job-status">
+            <li><a class="grey-text text-lighten-3" href="#!">Potential Job</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Potential Job</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Potential Job</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Potential Job</a></li>
+          </ul>
+      </div>
+      <div class="col l4 s12">
+        <h5 class="white-text">Status</h5>
+        <ul class="job-status">
+          <li><a class="grey-text text-lighten-3" href="#!">
+            {{#md-radios
+                selection=radioSelection
+                optionValuePath='id'
+                optionLabelPath='text'}}
+                <p>{{md-radio value=1 name="One"}}</p>
+                  <p>{{md-radio value=2 name="Two"}}</p>
+            {{/md-radios}}
+          </a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">
+            {{#md-radios
+                selection=radioSelection
+                optionValuePath='id'
+                optionLabelPath='text'}}
+                <p>{{md-radio value=1 name="One"}}</p>
+                  <p>{{md-radio value=2 name="Two"}}</p>
+            {{/md-radios}}
+          </a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">
+            {{#md-radios
+                selection=radioSelection
+                optionValuePath='id'
+                optionLabelPath='text'}}
+                <p>{{md-radio value=1 name="One"}}</p>
+                  <p>{{md-radio value=2 name="Two"}}</p>
+            {{/md-radios}}
+          </a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">
+            {{#md-radios
+                selection=radioSelection
+                optionValuePath='id'
+                optionLabelPath='text'}}
+                <p>{{md-radio value=1 name="One"}}</p>
+                  <p>{{md-radio value=2 name="Two"}}</p>
+            {{/md-radios}}
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2015 Copyright Iron Clad Jobs "Dodging bazookas since 1942!"
+    </div>
+  </div>
+</footer>

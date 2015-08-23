@@ -7,6 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('tracker', {path: '/'}, function() {
+    this.route('index', {path: '/'});
     this.route('contacts', function() {
       this.route('show', {path: '/'});
       this.route('create');
@@ -20,6 +21,10 @@ Router.map(function() {
       this.route('show');
     });
     this.route('profile', function() {
+      this.route('create');
+    });
+
+    this.route('org', {path: '/'}, function() {
       this.route('create');
     });
   });

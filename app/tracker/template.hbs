@@ -1,16 +1,32 @@
 <div class="row">
-
-    <div class="col s2">
+    <div class="col s1">
         {{#link-to 'tracker.profile.create'}}
-            {{md-btn icon='fa fa-user' action='debug' buttonType='floating' class='btn-large'}}
+            {{md-btn icon='fa fa-user' buttonType='floating' class='btn-large'}}
         {{/link-to}}
         {{#link-to 'tracker.contacts.show'}}
-            {{md-btn icon='fa fa-phone' action='debug' buttonType='floating' class='btn-large'}}
+            {{md-btn icon='fa fa-phone' buttonType='floating' class='btn-large'}}
         {{/link-to}}
         {{#link-to 'tracker.documents.show'}}
-            {{md-btn icon='fa fa-file-text-o' action='debug' buttonType='floating' class='btn-large'}}
+            {{md-btn icon='fa fa-file-text-o' buttonType='floating' class='btn-large'}}
+        {{/link-to}}
+        {{#link-to 'tracker.org.create'}}
+            {{md-btn icon='fa fa-building-o' buttonType='floating' class='btn-large'}}
         {{/link-to}}
     </div>
     {{outlet}}
+    <div class="col s11 profile-background">
+        <ul>
+        {{#each model as |profile|}}
+            <li>{{profile.fullName}}</li>
+            <li>{{profile.phoneNumber}}</li>
+            <li>{{profile.email}}</li>
+            <li>{{profile.address1}}</li>
+            <li>{{profile.address2}}</li>
+            <li>{{profile.city}}</li>
+            <li>{{profile.state}}</li>
+            <li>{{profile.zip}}</li>
+        {{/each}}
+        </ul>
+    </div>
 </div>
 
