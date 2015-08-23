@@ -39,36 +39,52 @@
       </div>
       <div class="col l4 s12">
         <h5 class="white-text">Contact</h5>
-        {{#if modalIsOpen}}
-            {{#md-modal close='closeModal' class="test-modal"}}
-                <div class="modal-content">
-                    <h4>Ohai there!</h4>
-                    <p>Star ember-cli-materialize if you love it on
-                    <a href="https://github.com/truenorth/ember-cli-materialize">github</a>!
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <a class="modal-action modal-close waves-effect waves-orange btn-flat agree-button" {{action 'agree'}}>
-                        Done!
-                    </a>
-                    <a class="modal-action modal-close waves-effect waves-red btn-flat cancel-button" {{action 'closeModal'}}>
-                        Cancel
-                    </a>
-                </div>
-            {{/md-modal}}
-        {{/if}}
+        <ul class="job-status">
+            <li><a class="grey-text text-lighten-3" href="#!">Potential Job</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Potential Job</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Potential Job</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Potential Job</a></li>
+          </ul>
       </div>
       <div class="col l4 s12">
         <h5 class="white-text">Status</h5>
         <ul class="job-status">
           <li><a class="grey-text text-lighten-3" href="#!">
-            {{md-select content=frameworks
-            value=framework
-            prompt="Status"}}
+            {{#md-radios
+                selection=radioSelection
+                optionValuePath='id'
+                optionLabelPath='text'}}
+                <p>{{md-radio value=1 name="One"}}</p>
+                  <p>{{md-radio value=2 name="Two"}}</p>
+            {{/md-radios}}
           </a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">
+            {{#md-radios
+                selection=radioSelection
+                optionValuePath='id'
+                optionLabelPath='text'}}
+                <p>{{md-radio value=1 name="One"}}</p>
+                  <p>{{md-radio value=2 name="Two"}}</p>
+            {{/md-radios}}
+          </a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">
+            {{#md-radios
+                selection=radioSelection
+                optionValuePath='id'
+                optionLabelPath='text'}}
+                <p>{{md-radio value=1 name="One"}}</p>
+                  <p>{{md-radio value=2 name="Two"}}</p>
+            {{/md-radios}}
+          </a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">
+            {{#md-radios
+                selection=radioSelection
+                optionValuePath='id'
+                optionLabelPath='text'}}
+                <p>{{md-radio value=1 name="One"}}</p>
+                  <p>{{md-radio value=2 name="Two"}}</p>
+            {{/md-radios}}
+          </a></li>
         </ul>
       </div>
     </div>
