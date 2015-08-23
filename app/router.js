@@ -19,6 +19,9 @@ Router.map(function() {
     this.route('documents', function() {
       this.route('show');
     });
+    this.route('profile', function() {
+      this.route('create');
+    });
   });
 });
 

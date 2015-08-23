@@ -11,21 +11,17 @@
 .s2 {
     border-top: 1px dotted white;
     background-color: #92C9D8;
-}
-
-.fa-users, .fa-tasks, .fa-file-text {
-    font-size: 100%;
-    width: 90%;
-    padding: 10px;
-    background-color: white;
-    border: 10pt solid black;
-    margin-top: 10px;
+    text-align: center;
 }
 
 .fa-plus {
     position: absolute;
     top: .5em;
-    right: .7em;
+    right: .5em;
     font-size: 25pt;
-    color: #92C9D8;
+    color: white;
+    border: 1px solid #92C9D8;
+    border-radius: 50%;
+    background-color: #92C9D8;
+    padding: 5px;
 }
