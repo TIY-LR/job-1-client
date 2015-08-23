@@ -2,10 +2,10 @@
     {{#link-to "tracker.contacts.create"}}
         <i class="fa fa-plus"></i>
     {{/link-to}}
-    <div class="contact-view">
-        <img class="contact-pic" src="/contact-pic.jpg" alt="contact">
-        <ul>
-            {{#each model as |contact|}}
+    {{#each model as |contact|}}
+        <div class="contact-view">
+            <img class="contact-pic" src="/contact-pic.jpg" alt="contact">
+            <ul class="contact-card">
                 <li>{{contact.firstName}} {{contact.lastName}}</li>
                 <li>{{contact.officeNumber}}</li>
                 <li>{{contact.cellNumber}}</li>
@@ -15,9 +15,9 @@
                 <li>{{contact.city}}</li>
                 <li>{{contact.state}}</li>
                 <li>{{contact.zip}}</li>
-            {{/each}}
-        </ul>
-    </div>
+            </ul>
+        </div>
+    {{/each}}
 </div>
 
 {{outlet}}

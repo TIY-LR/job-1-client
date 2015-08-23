@@ -6,10 +6,26 @@
 
 .contact-view {
     float: left;
-    width: 25%;
+    position: relative;
+    width: 45%;
+    height: 15em;
     margin: 1em;
+    border: 1px solid black;
+    background-color: white;
 }
 
 .contact-pic {
-    max-width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 75px;
+}
+
+.contact-card {
+    position: absolute;
+    top: 10px;
+    left: 6.75em;
+    border-left: 1px dotted black;
+    padding-left: 1em;
+
 }

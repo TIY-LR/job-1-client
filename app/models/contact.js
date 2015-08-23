@@ -6,10 +6,10 @@ export default DS.Model.extend({
   officeNumber: DS.attr('string'),
   cellNumber: DS.attr('string'),
   email: DS.attr('string'),
-  addressOne: DS.attr('string'),
-  addressTwo: DS.attr('string'),
+  address1: DS.attr('string'),
+  address2: DS.attr('string'),
   city: DS.attr('string'),
   state: DS.attr('string'),
   zip: DS.attr('string'),
-  publicOrg: DS.attr('string'),
+  organization: DS.attr('string'),
 });

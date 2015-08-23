@@ -5,7 +5,7 @@
 @import 'contact';
 
 .s10 {
-    background-color: red;
+    position: relative;
 }
 
 .s2 {
@@ -14,10 +14,17 @@
     background-color: #92C9D8;
 }
 
-.fa-users {
+.fa-users, .fa-tasks {
     font-size: 100pt;
     padding: 10px;
     background-color: white;
     border: 10pt solid black;
     margin-top: 10px;
+}
+
+.fa-plus {
+    position: absolute;
+    top: 0;
+    right: 0;
+
 }
