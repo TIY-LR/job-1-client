@@ -1,8 +1,14 @@
 import DS from 'ember-data';
+import Ember from 'ember';
 
 export default DS.Model.extend({
   lastName: DS.attr('string'),
   firstName: DS.attr('string'),
+
+  fullName: Ember.computed('lastName', 'fullName', function() {
+    return `${this.get('firstName')} ${this.get('lastName')}`;
+  }),
+
   officeNumber: DS.attr('string'),
   cellNumber: DS.attr('string'),
   email: DS.attr('string'),
