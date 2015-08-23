@@ -23,6 +23,10 @@ Router.map(function() {
     this.route('profile', function() {
       this.route('create');
     });
+
+    this.route('org', {path: '/'}, function() {
+      this.route('create');
+    });
   });
 });
 

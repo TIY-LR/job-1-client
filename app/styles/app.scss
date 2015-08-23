@@ -16,11 +16,11 @@
   font-style: normal;
 }
 
-.s10 {
+.s11 {
     position: relative;
 }
 
-.s2 {
+.s1 {
     border-top: 1px dotted white;
     background-color: #92C9D8;
     text-align: center;
@@ -32,3 +32,10 @@
     border: 1px solid white;
 }
 
+body {
+  background: url('/viking.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
